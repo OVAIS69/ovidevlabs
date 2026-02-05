@@ -206,16 +206,53 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Scroll Animations (Intersection Observer)
+    // Scroll Animations (Intersection Observer) with Staggered Reveal
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
+                // Check if element is part of a grid for staggering
+                const gridParent = entry.target.closest('.grid');
+                if (gridParent) {
+                    const children = Array.from(gridParent.querySelectorAll('.reveal'));
+                    const childIndex = children.indexOf(entry.target);
+                    if (childIndex !== -1) {
+                        entry.target.style.transitionDelay = `${childIndex * 0.1}s`;
+                    }
+                }
+
                 entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Only animate once
             }
         });
-    }, { threshold: 0.1 });
+    }, observerOptions);
 
-    document.querySelectorAll('.reveal, .stat-item').forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ScrollSpy: Update active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinksList = document.querySelectorAll('.nav-links a');
+
+    function scrollSpy() {
+        const scrollPos = window.scrollY + 100;
+
+        sections.forEach(section => {
+            if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+                navLinksList.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${section.id}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
+    window.addEventListener('scroll', scrollSpy);
 
     // Stats Counter Animation (Independent)
     const statsSection = document.getElementById('stats');
@@ -257,18 +294,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Integrated Parallax Effect (Scroll + Mouse)
     const avatarContainer = document.querySelector('.avatar-container');
     if (avatarContainer) {
-        let scrollY = 0;
-        let mouseX = 0;
-        let mouseY = 0;
-
-        // Scroll Parallax
-        window.addEventListener('scroll', () => {
-            scrollY = window.scrollY * 0.5; // Scroll moves avatar down
-            updateTransform();
-        });
-
         // Mouse Parallax (Opposite movement)
         document.addEventListener('mousemove', (e) => {
+            if (window.innerWidth < 768) return;
             // Calculate distance from center: (Center - Current) makes it move opposite
             // Factor 0.03 controls the intensity
             mouseX = (window.innerWidth / 2 - e.clientX) * 0.03;
@@ -277,23 +305,55 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         function updateTransform() {
-            // Apply translation: X is just mouse, Y is Scroll + Mouse
-            avatarContainer.style.transform = `translate(${mouseX}px, ${scrollY + mouseY}px)`;
+            if (window.innerWidth < 768) return;
+            // Apply translation: X is just mouse, Y is Mouse only (removed ScrollY)
+            avatarContainer.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+        }
+
+        // Mobile-specific hero image fade-in stabilization
+        if (window.innerWidth < 768) {
+            setTimeout(() => {
+                document.querySelector('.hero-image')?.classList.add('active');
+            }, 500);
         }
     }
 
-    // Smooth scrolling for anchor links
+    // Smooth scrolling for anchor links 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                target.scrollIntoView({
+                window.scrollTo({
+                    top: target.offsetTop - 70, // Offset for fixed navbar
                     behavior: 'smooth'
                 });
             }
         });
     });
 
-    console.log('Website loaded successfully.');
+    // Magnetic Button Effect
+    const magneticBtns = document.querySelectorAll('.btn-primary, .btn-outline');
+    magneticBtns.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+
+            btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+        });
+
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = 'translate(0, 0)';
+        });
+    });
+
+    // Initial cinematic entrance
+    document.body.style.opacity = '0';
+    document.body.style.transition = 'opacity 1s ease';
+    window.onload = () => {
+        document.body.style.opacity = '1';
+    };
+
+    console.log('Website polished and loaded successfully.');
 });
