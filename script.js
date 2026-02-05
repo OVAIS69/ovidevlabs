@@ -207,13 +207,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Scroll Animations (Intersection Observer) with Staggered Reveal
+    const isMobileView = window.innerWidth <= 768;
     const observerOptions = {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px"
+        threshold: isMobileView ? 0.05 : 0.15, // Trigger earlier on mobile for large cards
+        rootMargin: isMobileView ? "0px 0px -10px 0px" : "0px 0px -50px 0px"
     };
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
+        entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 // Check if element is part of a grid for staggering
                 const gridParent = entry.target.closest('.grid');
@@ -221,7 +222,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     const children = Array.from(gridParent.querySelectorAll('.reveal'));
                     const childIndex = children.indexOf(entry.target);
                     if (childIndex !== -1) {
-                        entry.target.style.transitionDelay = `${childIndex * 0.1}s`;
+                        // Reduce stagger on mobile since items are stacked vertically
+                        const staggerDelay = isMobileView ? 0.05 : 0.1;
+                        entry.target.style.transitionDelay = `${childIndex * staggerDelay}s`;
                     }
                 }
 
