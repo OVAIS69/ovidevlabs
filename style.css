@@ -728,6 +728,31 @@ section {
   }
 }
 
+/* Floating Avatar Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  30% {
+    transform: translateY(-20px);
+  }
+
+  30% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-avatar {
+  animation: float 4s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+
+.floating-avatar:hover {
+  transform: translateY(0px) scale(1) rotate(1deg);
+  filter: drop-shadow(0 0 40px rgba(56, 189, 248, 0.4));
+}
+
 
 /* Tech Marquee */
 .tech-logo {

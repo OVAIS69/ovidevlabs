@@ -336,6 +336,28 @@ document.addEventListener('DOMContentLoaded', () => {
         observerStats.observe(statsSection);
     }
 
+    // Parallax Effect for Avatar
+    let mouseX = 0, mouseY = 0;
+    const avatarContainer = document.querySelector('.avatar-container');
+    if (avatarContainer) {
+        document.addEventListener('mousemove', (e) => {
+            if (window.innerWidth < 768) return;
+            mouseX = (window.innerWidth / 2 - e.clientX) * 0.03;
+            mouseY = (window.innerHeight / 2 - e.clientY) * 0.03;
+            updateTransform();
+        });
+
+        function updateTransform() {
+            if (window.innerWidth < 768) return;
+            avatarContainer.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+        }
+
+        if (window.innerWidth < 768) {
+            setTimeout(() => {
+                document.querySelector('.hero-image')?.classList.add('active');
+            }, 500);
+        }
+    }
 
     // Smooth scrolling for anchor links 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

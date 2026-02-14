@@ -80,6 +80,27 @@
         margin-bottom: 1.5rem;
     }
 
+    /* ---------- AVATAR ---------- */
+    .avatar-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .avatar-container img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        filter: drop-shadow(0 10px 25px rgba(56, 189, 248, 0.25));
+    }
+
+    .floating-avatar {
+        animation: none !important;
+        transform: none !important;
+    }
+
 
     /* ---------- HERO CONTENT ---------- */
     .hero-content {
@@ -166,6 +187,11 @@
         #stats .grid-3 {
             grid-template-columns: 1fr;
             gap: 1.25rem;
+        }
+
+        .avatar-container img {
+            width: 125px;
+            height: 125px;
         }
 
 

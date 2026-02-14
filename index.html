@@ -66,7 +66,7 @@
 
     <!-- Hero Section -->
     <section class="hero reveal" style="padding-top: 4rem; padding-bottom: 2rem;">
-        <div class="container flex-center" style="min-height: 80vh; text-align: center;">
+        <div class="container grid grid-2" style="align-items: center; min-height: 80vh;">
             <div class="hero-content reveal">
                 <span class="hero-eyebrow"
                     style="color: var(--color-text-accent); font-weight: 600; letter-spacing: 0.12em; font-size: 0.85rem; display: inline-block; margin-bottom: 0.5rem;">HI,
@@ -78,23 +78,28 @@
                         style="font-size:0.6em; color:var(--color-text-muted); font-weight: 600; display: block; margin-top: 0.5rem;">for
                         High-Converting Websites</span>
                 </h1>
-                <p class="lead" style="margin: 1.5rem auto 2rem; color: var(--color-text-muted);">
+                <p class="lead" style="margin: 1.5rem 0 2rem; color: var(--color-text-muted);">
                     Conversion-focused Web Developer based in <span style="color: var(--color-text-main);">Mumbai,
                         Maharashtra</span>.
                     I build fast, SEO-optimized websites that help businesses grow.
                 </p>
-                <div class="hero-btns"
-                    style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; justify-content: center;">
+                <div class="hero-btns" style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
                     <a href="#projects" class="btn btn-primary">View Work</a>
                     <a href="#contact" class="btn btn-outline">Contact</a>
 
                     <!-- PC Social Links Restored -->
 
                 </div>
-
-                <!-- Social Links -->
-                <div class="social-links"
-                    style="display: flex; gap: 2rem; align-items: center; margin-top: 2rem; justify-content: center; width: 100%;">
+            </div>
+            <div class="hero-image reveal"
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="avatar-container" style="position: relative;">
+                    <img src="hero.png" alt="Ovais Avatar" class="floating-avatar"
+                        style="width: 100%; max-width: 320px; border-radius: 30px; filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.2)); mask-image: radial-gradient(ellipse at center top, black 65%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse at center top, black 65%, transparent 100%);">
+                </div>
+                <!-- Mobile Social Links (Inside hero-image container to keep Grid-2 clean for PC) -->
+                <div class="social-links mobile-only"
+                    style="display: flex; gap: 2rem; align-items: center; margin-top: 1.5rem; justify-content: center; width: 100%;">
                     <a href="https://github.com/OVAIS69" target="_blank"
                         style="color: var(--color-text-muted); font-size: 1.8rem;"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/ovais-shaikh-791980370" target="_blank"
