@@ -336,33 +336,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observerStats.observe(statsSection);
     }
 
-    // Parallax Effect for Avatar
-    // Integrated Parallax Effect (Scroll + Mouse)
-    const avatarContainer = document.querySelector('.avatar-container');
-    if (avatarContainer) {
-        // Mouse Parallax (Opposite movement)
-        document.addEventListener('mousemove', (e) => {
-            if (window.innerWidth < 768) return;
-            // Calculate distance from center: (Center - Current) makes it move opposite
-            // Factor 0.03 controls the intensity
-            mouseX = (window.innerWidth / 2 - e.clientX) * 0.03;
-            mouseY = (window.innerHeight / 2 - e.clientY) * 0.03;
-            updateTransform();
-        });
-
-        function updateTransform() {
-            if (window.innerWidth < 768) return;
-            // Apply translation: X is just mouse, Y is Mouse only (removed ScrollY)
-            avatarContainer.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
-        }
-
-        // Mobile-specific hero image fade-in stabilization
-        if (window.innerWidth < 768) {
-            setTimeout(() => {
-                document.querySelector('.hero-image')?.classList.add('active');
-            }, 500);
-        }
-    }
 
     // Smooth scrolling for anchor links 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
