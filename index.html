@@ -39,6 +39,7 @@
 </head>
 
 <body>
+    <div class="scroll-progress"></div>
 
     <!-- Navigation -->
     <nav class="navbar">
@@ -234,16 +235,22 @@
     <section id="projects" class="bg-alt">
         <div class="container reveal">
             <div class="section-header">
-                <h2>Recent Success Stories</h2>
-                <p>Real results for real businesses.</p>
+                <div class="filter-bar reveal"
+                    style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap;">
+                    <button class="filter-btn active" onclick="setFilter('All')" data-filter="All">All</button>
+                    <button class="filter-btn" onclick="setFilter('Web App')" data-filter="Web App">Web Apps</button>
+                    <button class="filter-btn" onclick="setFilter('E-commerce')"
+                        data-filter="E-commerce">E-commerce</button>
+                    <button class="filter-btn" onclick="setFilter('Landing Page')" data-filter="Landing Page">Landing
+                        Pages</button>
+                </div>
+
+                <div id="projects-grid" class="grid grid-2" style="transition: opacity 0.3s ease;">
+                    <!-- Projects will be injected here by JavaScript -->
+                </div>
+
+
             </div>
-
-            <div id="projects-grid" class="grid grid-2">
-                <!-- Projects will be injected here by JavaScript -->
-            </div>
-
-
-        </div>
     </section>
 
     <!-- Project Details Modal -->
@@ -336,6 +343,28 @@
                     <h3>Launch & Support</h3>
                     <p>We go live! I show you how to manage it, and I'm here if you need updates.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Booking Section -->
+    <section id="audit"
+        style="padding: 6rem 0; background: radial-gradient(circle at center, rgba(56, 189, 248, 0.05) 0%, transparent 70%);">
+        <div class="container reveal">
+            <div class="card-glass text-center"
+                style="padding: 4rem 2rem; border-color: rgba(56, 189, 248, 0.2); position: relative; overflow: hidden;">
+                <div
+                    style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: var(--gradient-primary); filter: blur(80px); opacity: 0.2;">
+                </div>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Get a Free Strategy Audit</h2>
+                <p style="max-width: 600px; margin: 0 auto 2.5rem; font-size: 1.1rem;">
+                    Not sure why your website isn't converting? Let's spend 15 minutes reviewing your site and finding
+                    the low-hanging fruit to grow your business.
+                </p>
+                <a href="https://wa.me/918828906337?text=Hi%20Ovi,%20I'd%20like%20to%20book%20a%20free%20audit"
+                    target="_blank" class="btn btn-primary" style="padding: 1.25rem 3rem; font-size: 1.1rem;">
+                    Book My Free Audit <i class="fas fa-calendar-alt" style="margin-left: 0.75rem;"></i>
+                </a>
             </div>
         </div>
     </section>
