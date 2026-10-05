@@ -12,37 +12,37 @@ interface HackItem {
 
 const hacksData: HackItem[] = [
   {
-    name: 'Modern Web Architectures',
-    prizes: [
-      'Interactive Full-Stack Web Applications',
-      'High-Converting UI & Responsive Systems',
-      'Speed, SEO & Motion-Driven Engineering',
-    ],
-    photo: '/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg',
-    rotation: -4,
-    href: 'https://github.com/OVAIS69',
-  },
-  {
-    name: 'AgriLocal.ai',
-    prizes: [
-      'AI Multilingual Voice Assistant',
-      'Crop Disease Vision Scanner',
-      'Maharashtra Farmers Directory',
-    ],
-    photo: '/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.jpg',
-    rotation: 5,
-    href: 'https://github.com/OVAIS69/AgriLocal.ai',
-  },
-  {
-    name: 'Lumière & HavenSpaces',
+    name: 'Lumière',
     prizes: [
       'Luxury Fine Jewellery 3D Tilt E-Commerce',
-      'Proptech Real Estate Discovery Platform',
+      'High-End Editorial Aesthetics & Pan-and-Zoom',
       'Next.js 15 App Router & Motion UX',
     ],
     photo: '/images/portfolio_showcase/lumiere/hero.png',
     rotation: -3,
     href: 'https://github.com/OVAIS69/Lumiere',
+  },
+  {
+    name: 'AgriLocal.ai',
+    prizes: [
+      'AI Multilingual Voice Assistant (EN / HI / MR)',
+      'Crop Disease Vision Camera Scanner',
+      'Live Mandi Rates & Farmers Directory',
+    ],
+    photo: '/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.jpg',
+    rotation: 4,
+    href: 'https://github.com/OVAIS69/AgriLocal.ai',
+  },
+  {
+    name: 'HavenSpaces',
+    prizes: [
+      'Proptech Real Estate Discovery & Booking',
+      'Interactive Map Exploration & Landlord Badges',
+      'High-Converting Listing Architecture',
+    ],
+    photo: '/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg',
+    rotation: -4,
+    href: 'https://github.com/OVAIS69/Havenspaces',
   },
 ];
 

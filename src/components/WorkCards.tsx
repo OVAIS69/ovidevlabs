@@ -173,14 +173,13 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
       {/* Grid of 4 Work Cards with parallax and reveal physics */}
       <ParallaxContainer speed={10} className="relative">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-y-16 md:gap-y-20 lg:gap-y-24 md:gap-x-8 lg:gap-x-14 mt-12 md:mt-16 items-start">
-          {/* Card 1: HavenSpaces */}
+          {/* Card 1: Lumière */}
           <CardReveal className="relative z-10 md:col-span-6 md:px-[15px]" offsetY={120} revealFrom={0} revealTo={0.4}>
             <a
-              href="/work/havenspaces"
-              onClick={(e) => handleProjectClick(e, 'havenspaces')}
+              href="/work/lumiere"
+              onClick={(e) => handleProjectClick(e, 'lumiere')}
               className="group relative block rounded-3xl overflow-hidden border border-[var(--color-border)] transition-all duration-500 hover:scale-[1.005] hover:shadow-2xl hover:shadow-black/[0.08] cursor-pointer bg-white"
             >
-              {/* Arrow circle button */}
               <div
                 className="absolute top-5 right-5 z-10 inline-flex items-center justify-center w-11 h-11 rounded-full transition-all duration-300 group-hover:scale-105 bg-black text-white shadow-[0_8px_24px_rgba(0,0,0,0.15)]"
                 aria-hidden="true"
@@ -196,37 +195,35 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
                 </svg>
               </div>
 
-              {/* Cover preview with tag pills */}
               <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
                 <img
-                  src="/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg"
-                  alt="HavenSpaces"
+                  src="/images/portfolio_showcase/lumiere/hero.png"
+                  alt="Lumière Jewellery"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
                 <div className="absolute left-4 right-4 bottom-3 flex flex-wrap gap-2 justify-end">
                   <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/60 text-white border border-white/20">
-                    Proptech
+                    Luxury E-Commerce
                   </span>
                   <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/60 text-white border border-white/20">
-                    Next.js
+                    3D Card Tilt
                   </span>
                 </div>
               </div>
 
-              {/* Details footer */}
               <div className="bg-[#ffffff] px-6 pt-5 pb-4 md:px-8 md:pt-6 md:pb-4 flex flex-col">
                 <div className="flex items-center justify-between">
                   <div className="relative h-10 flex items-center">
                     <span className="font-sans font-[600] text-[24px] tracking-tight text-black">
-                      HavenSpaces
+                      Lumière
                     </span>
                   </div>
                   <span className="font-archia text-[13px] font-[400] text-right text-black/55">
-                    Staff Product Engineer
+                    Creative Web Developer
                   </span>
                 </div>
                 <p className="font-sans font-[450] text-[14.5px] leading-[1.5] text-black/60 mt-3">
-                  A modern proptech real estate platform featuring interactive map search, verified landlord badges, schedule tour flows, and high-converting listing discovery.
+                  Timeless luxury fine jewellery digital flagship engineered with Next.js 15, physical 3D card tilt physics, pan-and-zoom inspection, and bespoke bridal storytelling.
                 </p>
               </div>
             </a>
@@ -288,13 +285,14 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
             </a>
           </CardReveal>
 
-          {/* Card 3: Lumière */}
+          {/* Card 3: HavenSpaces */}
           <CardReveal className="relative z-10 md:col-span-6 md:px-[15px]" offsetY={120} revealFrom={0} revealTo={0.4}>
             <a
-              href="/work/lumiere"
-              onClick={(e) => handleProjectClick(e, 'lumiere')}
+              href="/work/havenspaces"
+              onClick={(e) => handleProjectClick(e, 'havenspaces')}
               className="group relative block rounded-3xl overflow-hidden border border-[var(--color-border)] transition-all duration-500 hover:scale-[1.005] hover:shadow-2xl hover:shadow-black/[0.08] cursor-pointer bg-white"
             >
+              {/* Arrow circle button */}
               <div
                 className="absolute top-5 right-5 z-10 inline-flex items-center justify-center w-11 h-11 rounded-full transition-all duration-300 group-hover:scale-105 bg-black text-white shadow-[0_8px_24px_rgba(0,0,0,0.15)]"
                 aria-hidden="true"
@@ -310,35 +308,37 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
                 </svg>
               </div>
 
+              {/* Cover preview with tag pills */}
               <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
                 <img
-                  src="/images/portfolio_showcase/lumiere/hero.png"
-                  alt="Lumière Jewellery"
+                  src="/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg"
+                  alt="HavenSpaces"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
                 <div className="absolute left-4 right-4 bottom-3 flex flex-wrap gap-2 justify-end">
                   <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/60 text-white border border-white/20">
-                    Luxury E-Commerce
+                    Proptech
                   </span>
                   <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/60 text-white border border-white/20">
-                    3D Card Tilt
+                    Next.js
                   </span>
                 </div>
               </div>
 
+              {/* Details footer */}
               <div className="bg-[#ffffff] px-6 pt-5 pb-4 md:px-8 md:pt-6 md:pb-4 flex flex-col">
                 <div className="flex items-center justify-between">
                   <div className="relative h-10 flex items-center">
                     <span className="font-sans font-[600] text-[24px] tracking-tight text-black">
-                      Lumière
+                      HavenSpaces
                     </span>
                   </div>
                   <span className="font-archia text-[13px] font-[400] text-right text-black/55">
-                    Lead Product Designer
+                    Lead Web Developer
                   </span>
                 </div>
                 <p className="font-sans font-[450] text-[14.5px] leading-[1.5] text-black/60 mt-3">
-                  Timeless luxury fine jewellery digital flagship engineered with Next.js 15, physical 3D card tilt physics, pan-and-zoom inspection, and bespoke bridal storytelling.
+                  A modern proptech real estate platform featuring interactive map search, verified landlord badges, schedule tour flows, and high-converting listing discovery.
                 </p>
               </div>
             </a>
