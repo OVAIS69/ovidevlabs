@@ -12,29 +12,37 @@ interface HackItem {
 
 const hacksData: HackItem[] = [
   {
-    name: 'ETHGlobal Tokyo',
+    name: 'OviDevLabs',
     prizes: [
-      'Polygon — Best Public Good with Account Abstraction',
-      'Ethereum Foundation — Best Account Abstraction',
-      'Mantle — Build Use',
+      'Full Stack & AI Development Agency',
+      'High-Converting Web Architectures',
+      'Speed & SEO Optimized Engineering',
     ],
-    photo: '/img/Hacks/IMG_6795.png',
+    photo: '/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg',
     rotation: -4,
-    href: 'https://ethglobal.com/showcase/daypass-jf7vx',
+    href: 'https://ovidevlabs.in',
   },
   {
-    name: 'ETHGlobal Autonomous Worlds',
-    prizes: ['Finalist'],
-    photo: '/img/Hacks/autonomous-worlds.png',
+    name: 'AgriLocal.ai',
+    prizes: [
+      'AI Multilingual Voice Assistant',
+      'Crop Disease Vision Scanner',
+      'Maharashtra Farmers Directory',
+    ],
+    photo: '/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.jpg',
     rotation: 5,
-    href: 'https://ethglobal.com/showcase/realm-of-pepe-ju6pt',
+    href: 'https://github.com/OVAIS69/AgriLocal.ai',
   },
   {
-    name: 'Degen Hack',
-    prizes: ['Aleph Zero — #1 Prize'],
-    photo: '/img/Hacks/IMG_1423.png',
+    name: 'Lumière & HavenSpaces',
+    prizes: [
+      'Luxury Fine Jewellery 3D Tilt E-Commerce',
+      'Proptech Real Estate Discovery Platform',
+      'Next.js 15 App Router & Motion UX',
+    ],
+    photo: '/images/portfolio_showcase/lumiere/hero.png',
     rotation: -3,
-    href: 'https://devpost.com/software/fitbet-wx7eru',
+    href: 'https://github.com/OVAIS69/Lumiere',
   },
 ];
 
@@ -83,14 +91,14 @@ export default function Hacks() {
       onMouseLeave={handleMouseLeave}
       className="relative max-w-[1200px] mx-auto px-6 py-24 md:py-32 scroll-mt-24"
     >
-      <Badge dark>Hackathons</Badge>
+      <Badge dark>Key Highlights</Badge>
 
       <div className="text-center max-w-[680px] mx-auto mb-16 md:mb-20">
         <h2 className="font-sans font-[450] text-[clamp(2rem,4vw,3.5rem)] text-white leading-[1.05] mb-3">
-          Builder at heart
+          Builder & Technologist
         </h2>
         <p className="font-sans font-[450] text-[18px] text-white/65 leading-relaxed">
-          I hacked a few cool apps worth mentioning
+          Turning ideas into high-impact digital ventures & scalable products
         </p>
       </div>
 

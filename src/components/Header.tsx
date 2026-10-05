@@ -3,10 +3,10 @@ import { useState, useEffect, useCallback } from 'react';
 const navLinks = [
   { label: 'Selected Work', href: '#work-cards' },
   { label: 'About', href: '#about' },
-  { label: 'Hacks', href: '#hacks' },
+  { label: 'Highlights', href: '#hacks' },
 ];
 
-const EMAIL = 'joanna.szymd@gmail.com';
+const EMAIL = 'ovais.0404@gmail.com';
 
 async function copyToClipboard(text: string): Promise<boolean> {
   if (typeof navigator !== 'undefined' && navigator.clipboard?.writeText) {

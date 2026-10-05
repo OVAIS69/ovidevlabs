@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import Reveal from './Reveal';
 
-const EMAIL = 'joanna.szymd@gmail.com';
+const EMAIL = 'ovais.0404@gmail.com';
 
 const starConfigs = [
   {
@@ -327,44 +327,44 @@ export default function Hero() {
     >
       <div
         className="hero-card relative w-full flex-1 rounded-[61px] overflow-hidden"
-        style={{ background: 'linear-gradient(180deg, #F2F6FF 0%, rgba(242, 246, 255, 0) 100%)' }}
+        style={{ background: 'linear-gradient(180deg, #FFF5F8 0%, rgba(255, 245, 248, 0) 100%)' }}
       >
         {/* Floating 3D Stars with physics */}
         <HeroStars />
 
-        {/* Top left Warsaw label */}
+        {/* Top left Mumbai label */}
         <div className="hidden md:block absolute top-12 left-12 lg:top-14 lg:left-14 z-20">
           <Reveal durationMs={700}>
             <span className="font-archia font-[400] text-[14px] lg:text-[15px] text-black/55">
-              Based in Warsaw, Poland
+              Based in Mumbai, India
             </span>
           </Reveal>
         </div>
 
         {/* Bottom right summary note */}
-        <div className="hidden [@media(min-height:800px)]:md:block absolute bottom-32 right-12 lg:bottom-36 lg:right-14 z-20 max-w-[260px]">
+        <div className="hidden [@media(min-height:800px)]:md:block absolute bottom-32 right-12 lg:bottom-36 lg:right-14 z-20 max-w-[280px]">
           <Reveal durationMs={800} delayMs={700}>
             <p className="font-archia text-[13px] lg:text-[14px] leading-[1.55] text-black/55 text-right">
-              I help to set the direction, design products end-to-end, lead teams and take full ownership for the processes and results.
+              Founder at OviDevLabs. Architecting full-stack web platforms, AI integrations, and high-converting interfaces.
             </p>
           </Reveal>
         </div>
 
         {/* Center content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center gap-2 sm:gap-3 md:gap-4 [@media(min-height:800px)]:lg:gap-6 px-4 sm:px-6 md:px-12 pt-6 sm:pt-12 md:pt-16 [@media(min-height:800px)]:lg:pt-24 pb-20 sm:pb-28 md:pb-32 [@media(min-height:800px)]:lg:pb-44">
-          {/* Mobile Warsaw label */}
+          {/* Mobile Mumbai label */}
           <Reveal durationMs={700}>
             <span className="md:hidden font-archia font-[400] text-[14px] text-black/55">
-              Based in Warsaw, Poland
+              Based in Mumbai, India
             </span>
           </Reveal>
 
           {/* Profile pill photo */}
           <Reveal durationMs={700} delayMs={60}>
-            <span className="relative inline-block w-[52px] h-[76px] sm:w-[60px] sm:h-[88px] md:w-[64px] md:h-[96px] [@media(min-height:800px)]:lg:w-[72px] [@media(min-height:800px)]:lg:h-[112px] rounded-full overflow-hidden border-[2px] md:border-[2.4px] border-[var(--color-border)]">
+            <span className="relative inline-block w-[54px] h-[78px] sm:w-[62px] sm:h-[90px] md:w-[68px] md:h-[100px] [@media(min-height:800px)]:lg:w-[76px] [@media(min-height:800px)]:lg:h-[116px] rounded-full overflow-hidden border-[2px] md:border-[2.4px] border-[var(--color-border)] shadow-md shadow-pink-900/5">
               <img
                 src="/img/pfp.png"
-                alt="Joanna"
+                alt="Ovais Shaikh"
                 className="w-full h-full object-cover"
               />
             </span>
@@ -374,7 +374,7 @@ export default function Hero() {
           <div className="-mt-1 md:-mt-2">
             <Reveal durationMs={800} delayMs={130}>
               <p className="font-sans font-[450] text-[clamp(1.25rem,2.2vw,2rem)] text-black/45 leading-[1.45]" style={{ paddingBottom: '0.18em' }}>
-                Hey, I'm Joanna
+                Hey, I'm Ovais
               </p>
             </Reveal>
           </div>
@@ -382,13 +382,13 @@ export default function Hero() {
           {/* Huge Main Headline */}
           <h1 className="w-full max-w-[1200px] font-sans font-[450] leading-[1.06] text-[clamp(1.5rem,min(4.4vw,6.5vh),4.25rem)] text-black tracking-[-0.01em] -mt-2 md:-mt-3">
             <Reveal durationMs={850} delayMs={250}>
-              <span className="block">Staff Product Designer</span>
+              <span className="block">Creative Full Stack Engineer</span>
             </Reveal>
             <Reveal durationMs={850} delayMs={350}>
-              <span className="block">with 9 years of experience,</span>
+              <span className="block">shipping AI & web products,</span>
             </Reveal>
             <Reveal durationMs={850} delayMs={450}>
-              <span className="block">specialising in complex systems</span>
+              <span className="block">specialising in high-converting UX</span>
             </Reveal>
           </h1>
 

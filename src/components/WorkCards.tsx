@@ -139,9 +139,9 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
           <div className="hidden md:block">
             <BlurHeadline
               lines={[
-                'I define strategy,',
-                'talk with the users and',
-                'ship things that move the business',
+                'I build full-stack architectures,',
+                'design intuitive interfaces and',
+                'ship products that scale businesses',
               ]}
               blurPx={18}
               mutedOpacity={0.12}
@@ -154,7 +154,7 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
           <div className="md:hidden">
             <BlurHeadline
               lines={[
-                'I define strategy, talk with the users and ship things that move the business',
+                'I build full-stack architectures, design intuitive interfaces and ship products that scale businesses',
               ]}
               blurPx={14}
               mutedOpacity={0.18}
@@ -173,12 +173,12 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
       {/* Grid of 4 Work Cards with parallax and reveal physics */}
       <ParallaxContainer speed={10} className="relative">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-y-16 md:gap-y-20 lg:gap-y-24 md:gap-x-8 lg:gap-x-14 mt-12 md:mt-16 items-start">
-          {/* Card 1: AlfaFrens */}
+          {/* Card 1: HavenSpaces */}
           <CardReveal className="relative z-10 md:col-span-6 md:px-[15px]" offsetY={120} revealFrom={0} revealTo={0.4}>
             <a
-              href="/work/alfafrens"
-              onClick={(e) => handleProjectClick(e, 'alfafrens')}
-              className="group relative block rounded-3xl overflow-hidden border border-[var(--color-border)] transition-all duration-500 hover:scale-[1.005] hover:shadow-2xl hover:shadow-black/[0.08] cursor-pointer"
+              href="/work/havenspaces"
+              onClick={(e) => handleProjectClick(e, 'havenspaces')}
+              className="group relative block rounded-3xl overflow-hidden border border-[var(--color-border)] transition-all duration-500 hover:scale-[1.005] hover:shadow-2xl hover:shadow-black/[0.08] cursor-pointer bg-white"
             >
               {/* Arrow circle button */}
               <div
@@ -199,16 +199,16 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
               {/* Cover preview with tag pills */}
               <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
                 <img
-                  src="/img/AlfaFrens/cover.png"
-                  alt="AlfaFrens"
+                  src="/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg"
+                  alt="HavenSpaces"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
                 <div className="absolute left-4 right-4 bottom-3 flex flex-wrap gap-2 justify-end">
-                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-white/70 text-black border border-white/50">
-                    Subscriptions
+                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/60 text-white border border-white/20">
+                    Proptech
                   </span>
-                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-white/70 text-black border border-white/50">
-                    SocialFi
+                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/60 text-white border border-white/20">
+                    Next.js
                   </span>
                 </div>
               </div>
@@ -216,30 +216,28 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
               {/* Details footer */}
               <div className="bg-[#ffffff] px-6 pt-5 pb-4 md:px-8 md:pt-6 md:pb-4 flex flex-col">
                 <div className="flex items-center justify-between">
-                  <div className="relative h-10 w-40 flex items-center">
-                    <img
-                      src="/img/AlfaFrens/logo.png"
-                      alt="AlfaFrens logo"
-                      className="max-h-full max-w-full object-contain object-left"
-                    />
+                  <div className="relative h-10 flex items-center">
+                    <span className="font-sans font-[600] text-[24px] tracking-tight text-black">
+                      HavenSpaces
+                    </span>
                   </div>
                   <span className="font-archia text-[13px] font-[400] text-right text-black/55">
-                    Staff Product Designer
+                    Staff Product Engineer
                   </span>
                 </div>
                 <p className="font-sans font-[450] text-[14.5px] leading-[1.5] text-black/60 mt-3">
-                  A social subscriptions app that helps creators get paid for their content, rewards subscribers with AF tokens, and lets speculators earn a share of channel revenue through staking cashback.
+                  A modern proptech real estate platform featuring interactive map search, verified landlord badges, schedule tour flows, and high-converting listing discovery.
                 </p>
               </div>
             </a>
           </CardReveal>
 
-          {/* Card 2: Superboring */}
+          {/* Card 2: AgriLocal.ai */}
           <CardReveal className="relative z-10 md:col-span-6 md:px-[15px]" offsetY={120} revealFrom={0.5} revealTo={0.9}>
             <a
-              href="/work/superboring"
-              onClick={(e) => handleProjectClick(e, 'superboring')}
-              className="group relative block rounded-3xl overflow-hidden border border-black/40 transition-all duration-500 hover:scale-[1.005] hover:shadow-2xl hover:shadow-black/[0.08] cursor-pointer"
+              href="/work/agrilocal"
+              onClick={(e) => handleProjectClick(e, 'agrilocal')}
+              className="group relative block rounded-3xl overflow-hidden border border-black/40 transition-all duration-500 hover:scale-[1.005] hover:shadow-2xl hover:shadow-black/[0.08] cursor-pointer bg-[#0a0a0a]"
             >
               <div
                 className="absolute top-5 right-5 z-10 inline-flex items-center justify-center w-11 h-11 rounded-full transition-all duration-300 group-hover:scale-105 bg-white text-black shadow-[0_8px_24px_rgba(0,0,0,0.25)]"
@@ -258,46 +256,44 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
 
               <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
                 <img
-                  src="/img/SuperBoring/sb-hero.png"
-                  alt="Superboring"
+                  src="/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.jpg"
+                  alt="AgriLocal.ai"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
                 <div className="absolute left-4 right-4 bottom-3 flex flex-wrap gap-2 justify-end">
-                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/55 text-white border border-white/20">
-                    DCA
+                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/65 text-white border border-white/20">
+                    AI Agritech
                   </span>
-                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/55 text-white border border-white/20">
-                    Trading
+                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/65 text-white border border-white/20">
+                    Voice AI
                   </span>
                 </div>
               </div>
 
               <div className="bg-[#0a0a0a] px-6 pt-5 pb-4 md:px-8 md:pt-6 md:pb-4 flex flex-col">
                 <div className="flex items-center justify-between">
-                  <div className="relative h-10 w-40 flex items-center">
-                    <img
-                      src="/img/SuperBoring/logo.png"
-                      alt="Superboring logo"
-                      className="max-h-full max-w-full object-contain object-left invert brightness-200"
-                    />
+                  <div className="relative h-10 flex items-center">
+                    <span className="font-sans font-[600] text-[24px] tracking-tight text-white">
+                      AgriLocal.ai
+                    </span>
                   </div>
                   <span className="font-archia text-[13px] font-[400] text-right text-white/55">
-                    Staff Product Designer
+                    Founder & AI Engineer
                   </span>
                 </div>
                 <p className="font-sans font-[450] text-[14.5px] leading-[1.5] text-white/65 mt-3">
-                  Superboring is a stream-powered dollar-cost-averaging (DCA) platform for crypto assets. Tokens are streamed on-chain every second into target assets, enabling continuous buys with much more frequent execution than typical DCA.
+                  AI-powered smart agriculture platform empowering local farmers with hands-free multilingual voice assistance (English, Hindi, Marathi), crop disease diagnostics, and live mandi prices.
                 </p>
               </div>
             </a>
           </CardReveal>
 
-          {/* Card 3: Superfluid */}
+          {/* Card 3: Lumière */}
           <CardReveal className="relative z-10 md:col-span-6 md:px-[15px]" offsetY={120} revealFrom={0} revealTo={0.4}>
             <a
-              href="/work/superfluid"
-              onClick={(e) => handleProjectClick(e, 'superfluid')}
-              className="group relative block rounded-3xl overflow-hidden border border-[var(--color-border)] transition-all duration-500 hover:scale-[1.005] hover:shadow-2xl hover:shadow-black/[0.08] cursor-pointer"
+              href="/work/lumiere"
+              onClick={(e) => handleProjectClick(e, 'lumiere')}
+              className="group relative block rounded-3xl overflow-hidden border border-[var(--color-border)] transition-all duration-500 hover:scale-[1.005] hover:shadow-2xl hover:shadow-black/[0.08] cursor-pointer bg-white"
             >
               <div
                 className="absolute top-5 right-5 z-10 inline-flex items-center justify-center w-11 h-11 rounded-full transition-all duration-300 group-hover:scale-105 bg-black text-white shadow-[0_8px_24px_rgba(0,0,0,0.15)]"
@@ -316,91 +312,89 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
 
               <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
                 <img
-                  src="/img/Superfluid/cover.jpg"
-                  alt="Superfluid Claim App"
+                  src="/images/portfolio_showcase/lumiere/hero.png"
+                  alt="Lumière Jewellery"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
                 <div className="absolute left-4 right-4 bottom-3 flex flex-wrap gap-2 justify-end">
-                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/55 text-white border border-white/20">
-                    Token management
+                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/60 text-white border border-white/20">
+                    Luxury E-Commerce
                   </span>
-                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/55 text-white border border-white/20">
-                    Governance
+                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/60 text-white border border-white/20">
+                    3D Card Tilt
                   </span>
                 </div>
               </div>
 
               <div className="bg-[#ffffff] px-6 pt-5 pb-4 md:px-8 md:pt-6 md:pb-4 flex flex-col">
                 <div className="flex items-center justify-between">
-                  <div className="relative h-10 w-40 flex items-center">
-                    <img
-                      src="/img/Superfluid/logo.png"
-                      alt="Superfluid Claim App logo"
-                      className="max-h-full max-w-full object-contain object-left"
-                    />
-                  </div>
-                  <span className="font-archia text-[13px] font-[400] text-right text-black/55">
-                    Staff Product Designer
-                  </span>
-                </div>
-                <p className="font-sans font-[450] text-[14.5px] leading-[1.5] text-black/60 mt-3">
-                  SUP token claim app that lets holders claim, manage, stake, and earn SUP, built to support the Foundation’s token distribution and engagement strategy.
-                </p>
-              </div>
-            </a>
-          </CardReveal>
-
-          {/* Card 4: LUV */}
-          <CardReveal className="relative z-10 md:col-span-6 md:px-[15px]" offsetY={120} revealFrom={0.5} revealTo={0.9}>
-            <a
-              href="/work/luv"
-              onClick={(e) => handleProjectClick(e, 'luv')}
-              className="group relative block rounded-3xl overflow-hidden border border-[var(--color-border)] transition-all duration-500 hover:scale-[1.005] hover:shadow-2xl hover:shadow-black/[0.08] cursor-pointer"
-            >
-              <div
-                className="absolute top-5 right-5 z-10 inline-flex items-center justify-center w-11 h-11 rounded-full transition-all duration-300 group-hover:scale-105 bg-black text-white shadow-[0_8px_24px_rgba(0,0,0,0.15)]"
-                aria-hidden="true"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                >
-                  <path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-
-              <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
-                <img
-                  src="/img/LUV/card.png"
-                  alt="LUV"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                />
-                <div className="absolute left-4 right-4 bottom-3 flex flex-wrap gap-2 justify-end">
-                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-white/70 text-black border border-white/50">
-                    Automotive
-                  </span>
-                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-white/70 text-black border border-white/50">
-                    Physical UX
-                  </span>
-                </div>
-              </div>
-
-              <div className="bg-[#ffffff] px-6 pt-5 pb-4 md:px-8 md:pt-6 md:pb-4 flex flex-col">
-                <div className="flex items-center justify-between">
-                  <div className="relative h-10 w-40 flex items-center">
-                    <span className="font-sans font-[600] text-[26px] tracking-tight text-black">
-                      LUV
+                  <div className="relative h-10 flex items-center">
+                    <span className="font-sans font-[600] text-[24px] tracking-tight text-black">
+                      Lumière
                     </span>
                   </div>
                   <span className="font-archia text-[13px] font-[400] text-right text-black/55">
-                    Lead UX Designer
+                    Lead Product Designer
                   </span>
                 </div>
                 <p className="font-sans font-[450] text-[14.5px] leading-[1.5] text-black/60 mt-3">
-                  The world’s smallest urban electric car. I led the team behind its full control system, dashboard, steering wheel ergonomics, and door controls, all with no touchscreen.
+                  Timeless luxury fine jewellery digital flagship engineered with Next.js 15, physical 3D card tilt physics, pan-and-zoom inspection, and bespoke bridal storytelling.
+                </p>
+              </div>
+            </a>
+          </CardReveal>
+
+          {/* Card 4: Sunshine */}
+          <CardReveal className="relative z-10 md:col-span-6 md:px-[15px]" offsetY={120} revealFrom={0.5} revealTo={0.9}>
+            <a
+              href="/work/sunshine"
+              onClick={(e) => handleProjectClick(e, 'sunshine')}
+              className="group relative block rounded-3xl overflow-hidden border border-[var(--color-border)] transition-all duration-500 hover:scale-[1.005] hover:shadow-2xl hover:shadow-black/[0.08] cursor-pointer bg-white"
+            >
+              <div
+                className="absolute top-5 right-5 z-10 inline-flex items-center justify-center w-11 h-11 rounded-full transition-all duration-300 group-hover:scale-105 bg-black text-white shadow-[0_8px_24px_rgba(0,0,0,0.15)]"
+                aria-hidden="true"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                >
+                  <path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+
+              <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                <img
+                  src="/images/portfolio_showcase/sunshine/full-collection.jpg"
+                  alt="Sunshine Herbal"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                />
+                <div className="absolute left-4 right-4 bottom-3 flex flex-wrap gap-2 justify-end">
+                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/60 text-white border border-white/20">
+                    D2C Beauty
+                  </span>
+                  <span className="font-archia text-[11px] tracking-[0.06em] uppercase rounded-full px-2.5 py-1 backdrop-blur-md bg-black/60 text-white border border-white/20">
+                    Ayurveda
+                  </span>
+                </div>
+              </div>
+
+              <div className="bg-[#ffffff] px-6 pt-5 pb-4 md:px-8 md:pt-6 md:pb-4 flex flex-col">
+                <div className="flex items-center justify-between">
+                  <div className="relative h-10 flex items-center">
+                    <span className="font-sans font-[600] text-[24px] tracking-tight text-black">
+                      Sunshine Herbal
+                    </span>
+                  </div>
+                  <span className="font-archia text-[13px] font-[400] text-right text-black/55">
+                    Full Stack Developer
+                  </span>
+                </div>
+                <p className="font-sans font-[450] text-[14.5px] leading-[1.5] text-black/60 mt-3">
+                  Organic Ayurvedic and botanical skincare e-commerce platform with dual-layer ingredient transparency, step-by-step application rituals, and sticky mobile navigation.
                 </p>
               </div>
             </a>

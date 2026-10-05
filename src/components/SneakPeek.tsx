@@ -1,32 +1,32 @@
 const row1Images = [
-  { src: '/img/RandomProjects/main-hero-af.jpg', alt: 'Main Hero AF' },
-  { src: '/img/RandomProjects/via-1.jpg', alt: 'Via 1' },
-  { src: '/img/RandomProjects/dojo-1.jpg', alt: 'Dojo 1' },
-  { src: '/img/RandomProjects/car2.jpg', alt: 'Car 2' },
+  { src: '/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg', alt: 'HavenSpaces Hero' },
+  { src: '/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.jpg', alt: 'AgriLocal Hero' },
+  { src: '/images/portfolio_showcase/lumiere/hero.png', alt: 'Lumiere High Fashion' },
+  { src: '/images/portfolio_showcase/sunshine/full-collection.jpg', alt: 'Sunshine Collection' },
 ];
 
 const row2Images = [
-  { src: '/img/RandomProjects/sup-1.jpg', alt: 'SUP 1' },
-  { src: '/img/RandomProjects/labs-forge-2.jpg', alt: 'Labs Forge 2' },
-  { src: '/img/RandomProjects/thev-1.jpg', alt: 'TheV 1' },
-  { src: '/img/RandomProjects/stkr-1.jpg', alt: 'Stkr 1' },
+  { src: '/images/portfolio_showcase/2_havenspaces_interface_screens.jpg', alt: 'HavenSpaces UI' },
+  { src: '/images/portfolio_showcase/agrilocal/2_agrilocal_interface_screens.jpg', alt: 'AgriLocal Screens' },
+  { src: '/images/portfolio_showcase/lumiere/ring.png', alt: 'Lumiere Ring' },
+  { src: '/img/ovais-outfit.jpg', alt: 'Ovais Shaikh' },
 ];
 
 const row3Images = [
-  { src: '/img/RandomProjects/cover.jpg', alt: 'Cover' },
-  { src: '/img/RandomProjects/hyksos-1.jpg', alt: 'Hyksos' },
-  { src: '/img/RandomProjects/via-2.jpg', alt: 'Via 2' },
-  { src: '/img/RandomProjects/via-3.jpg', alt: 'Via 3' },
+  { src: '/images/portfolio_showcase/3_havenspaces_features_showcase.jpg', alt: 'HavenSpaces Features' },
+  { src: '/images/portfolio_showcase/sunshine/chandan-face-pack.png', alt: 'Chandan Pack' },
+  { src: '/images/portfolio_showcase/lumiere/bridal-ring-1.png', alt: 'Bridal Ring' },
+  { src: '/images/portfolio_showcase/sunshine/rose-face-pack.png', alt: 'Rose Pack' },
 ];
 
 const row4Images = [
-  { src: '/img/RandomProjects/mangrove.jpg', alt: 'Mangrove' },
-  { src: '/img/RandomProjects/sb-1.jpg', alt: 'SB 1' },
-  { src: '/img/RandomProjects/dojo-2.jpg', alt: 'Dojo 2' },
-  { src: '/img/RandomProjects/sup-website.jpg', alt: 'SUP Website' },
+  { src: '/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.jpg', alt: 'AgriLocal AI' },
+  { src: '/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg', alt: 'HavenSpaces' },
+  { src: '/images/portfolio_showcase/lumiere/earrings.png', alt: 'Diamond Earrings' },
+  { src: '/images/portfolio_showcase/sunshine/neem-face-wash.jpg', alt: 'Neem Face Wash' },
 ];
 
-const EMAIL = 'joanna.szymd@gmail.com';
+const EMAIL = 'ovais.0404@gmail.com';
 
 function MarqueeRow({
   images,

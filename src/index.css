@@ -110,13 +110,15 @@
 }
 
 :root {
-  --color-bg: #cbd5e9;
-  --color-surface: #f2f6ff;
-  --color-text: #000;
-  --color-muted: #4a5468;
-  --color-border: #b6c0d4;
-  --color-cta-bg: #000;
-  --color-cta-text: #f2f6ff;
+  --color-bg: #eddde3;
+  --color-surface: #fff5f8;
+  --color-text: #181216;
+  --color-muted: #5d4952;
+  --color-border: #dbc4ce;
+  --color-pink-accent: #e58ca8;
+  --color-pink-glow: rgba(229, 140, 168, 0.35);
+  --color-cta-bg: #181216;
+  --color-cta-text: #fff5f8;
 }
 
 *, ::after, ::before {
@@ -138,25 +140,25 @@ body {
 }
 
 .about-word-warm {
-  background: linear-gradient(180deg, #fff 0%, #f3e6ec 60%, #e7c9d6 100%);
+  background: linear-gradient(180deg, #fff 0%, #fde8f0 60%, #f5c4d6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .about-word-cool {
-  background: linear-gradient(180deg, #fff 0%, #e8eef9 55%, #c8d4eb 100%);
+  background: linear-gradient(180deg, #fff 0%, #f8e6f0 55%, #e8c6d8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .about-word-iridescent {
-  background: linear-gradient(90deg, #f9c8e1 0%, #d6b8f2 22%, #b8d6f2 48%, #b8f2e4 72%, #f2dab8 100%);
+  background: linear-gradient(90deg, #ffd1e4 0%, #f3b8e2 25%, #d6b8f2 50%, #fcd6d8 75%, #ffd4b8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  filter: drop-shadow(0 0 12px rgba(214, 184, 242, 0.28));
+  filter: drop-shadow(0 0 12px rgba(243, 184, 226, 0.35));
 }
 
 .marquee-row:hover .animate-marquee-left,

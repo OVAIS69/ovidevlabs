@@ -16,14 +16,14 @@ export default function App() {
   // Check URL pathname or hash on load
   useEffect(() => {
     const path = window.location.pathname;
-    const match = path.match(/\/work\/(alfafrens|superboring|superfluid|luv)/i);
+    const match = path.match(/\/work\/(havenspaces|agrilocal|lumiere|sunshine)/i);
     if (match) {
       setSelectedProject(match[1].toLowerCase());
     }
 
     const onPopState = () => {
       const p = window.location.pathname;
-      const m = p.match(/\/work\/(alfafrens|superboring|superfluid|luv)/i);
+      const m = p.match(/\/work\/(havenspaces|agrilocal|lumiere|sunshine)/i);
       setSelectedProject(m ? m[1].toLowerCase() : null);
     };
 
