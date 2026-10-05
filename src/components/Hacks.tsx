@@ -12,15 +12,15 @@ interface HackItem {
 
 const hacksData: HackItem[] = [
   {
-    name: 'OviDevLabs',
+    name: 'Modern Web Architectures',
     prizes: [
-      'Full Stack & AI Development Agency',
-      'High-Converting Web Architectures',
-      'Speed & SEO Optimized Engineering',
+      'Interactive Full-Stack Web Applications',
+      'High-Converting UI & Responsive Systems',
+      'Speed, SEO & Motion-Driven Engineering',
     ],
     photo: '/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg',
     rotation: -4,
-    href: 'https://ovidevlabs.in',
+    href: 'https://github.com/OVAIS69',
   },
   {
     name: 'AgriLocal.ai',

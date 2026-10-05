@@ -53,17 +53,6 @@ const socialLinks = [
       </svg>
     ),
   },
-  {
-    label: 'OviDevLabs',
-    href: 'https://ovidevlabs.in',
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <circle cx="12" cy="12" r="10" />
-        <line x1="2" y1="12" x2="22" y2="12" />
-        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-      </svg>
-    ),
-  },
 ];
 
 export default function Footer() {
@@ -161,7 +150,7 @@ export default function Footer() {
         </div>
 
         <p className="text-center font-archia text-[14px] text-white/55 mt-10">
-          Designed & Built by <span className="text-white font-[500]">Ovais Shaikh</span> <span className="text-white/25 mx-1.5">·</span> Founder at <a href="https://ovidevlabs.in" target="_blank" rel="noopener noreferrer" className="text-pink-300 hover:underline">OviDevLabs</a>
+          Designed & Built by <span className="text-white font-[500]">Ovais Shaikh</span> <span className="text-white/25 mx-1.5">·</span> Creative Web Developer
         </p>
       </div>
     </footer>

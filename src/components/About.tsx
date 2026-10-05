@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Badge from './Badge';
 import Reveal from './Reveal';
 
-const trailImages = Array.from({ length: 21 }, (_, i) => `/img/ImageTrail/${i + 1}.png`);
+const trailImages = Array.from({ length: 12 }, (_, i) => `/img/ImageTrail/${i + 1}.jpg`);
 
 interface TrailItem {
   id: number;
@@ -159,11 +159,11 @@ export default function About() {
           </h2>
 
           <p className="font-archia font-[400] text-[16px] md:text-[17px] leading-[1.7] text-white/65 max-w-[760px] mt-6 md:mt-7">
-            Founder of <span className="text-white font-[500]">OviDevLabs</span>. Over the past 5+ years, I've designed and engineered fast, scalable web applications, AI tools, proptech platforms, and high-converting e-commerce experiences across Next.js, React, and Python.
+            I'm a <span className="text-white font-[500]">Creative Web Developer</span>. Over the past 5+ years, I've designed and engineered fast, responsive web applications, interactive user experiences, proptech platforms, and high-converting digital products across Next.js, React, TypeScript, and Python.
           </p>
 
           <p className="font-archia font-[400] text-[16px] md:text-[17px] leading-[1.7] text-white/65 max-w-[760px] mt-4">
-            AI is baked into my development DNA. From fine-tuned voice models for regional agriculture to high-performance real-time search architectures, I build products that are fast, intuitive, and visually distinct.
+            From modern web frontends and micro-interactions to AI integrations and high-performance search architectures, I build websites and web apps that are smooth, intuitive, and visually distinct.
           </p>
 
           <p className="font-archia font-[600] text-pink-300/80 text-[16px] md:text-[17px] mt-4 md:mt-5 max-w-[760px]">

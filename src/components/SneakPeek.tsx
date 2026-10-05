@@ -1,29 +1,29 @@
 const row1Images = [
-  { src: '/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg', alt: 'HavenSpaces Hero' },
-  { src: '/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.jpg', alt: 'AgriLocal Hero' },
-  { src: '/images/portfolio_showcase/lumiere/hero.png', alt: 'Lumiere High Fashion' },
-  { src: '/images/portfolio_showcase/sunshine/full-collection.jpg', alt: 'Sunshine Collection' },
+  { src: '/images/portfolio_showcase/hehe/card 1.jpg', alt: 'Furni - Modern Interior Design Studio' },
+  { src: '/images/portfolio_showcase/hehe/card 2.jpg', alt: 'Mindtech - IT & Cloud Solutions' },
+  { src: '/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg', alt: 'HavenSpaces Proptech' },
+  { src: '/images/portfolio_showcase/hehe/card 3.png', alt: 'Simply - Clean Web Design Studio' },
 ];
 
 const row2Images = [
-  { src: '/images/portfolio_showcase/2_havenspaces_interface_screens.jpg', alt: 'HavenSpaces UI' },
-  { src: '/images/portfolio_showcase/agrilocal/2_agrilocal_interface_screens.jpg', alt: 'AgriLocal Screens' },
-  { src: '/images/portfolio_showcase/lumiere/ring.png', alt: 'Lumiere Ring' },
-  { src: '/img/ovais-outfit.jpg', alt: 'Ovais Shaikh' },
+  { src: '/images/portfolio_showcase/hehe/card 4.png', alt: 'SkyGlide - Visit Tokyo Travel Platform' },
+  { src: '/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.jpg', alt: 'AgriLocal.ai Smart Farming' },
+  { src: '/images/portfolio_showcase/hehe/card 5.png', alt: 'Borcelle - Gourmet Burger App' },
+  { src: '/images/portfolio_showcase/lumiere/hero.png', alt: 'Lumière High Jewellery' },
 ];
 
 const row3Images = [
-  { src: '/images/portfolio_showcase/3_havenspaces_features_showcase.jpg', alt: 'HavenSpaces Features' },
-  { src: '/images/portfolio_showcase/sunshine/chandan-face-pack.png', alt: 'Chandan Pack' },
-  { src: '/images/portfolio_showcase/lumiere/bridal-ring-1.png', alt: 'Bridal Ring' },
-  { src: '/images/portfolio_showcase/sunshine/rose-face-pack.png', alt: 'Rose Pack' },
+  { src: '/images/portfolio_showcase/hehe/card 6.png', alt: 'Taor - Dining & Cuisine Booking Platform' },
+  { src: '/images/portfolio_showcase/sunshine/full-collection.jpg', alt: 'Sunshine Botanical Skincare' },
+  { src: '/images/portfolio_showcase/hehe/card 7.png', alt: 'Space - Astronomy & Telescope Platform' },
+  { src: '/images/portfolio_showcase/2_havenspaces_interface_screens.jpg', alt: 'HavenSpaces UI' },
 ];
 
 const row4Images = [
-  { src: '/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.jpg', alt: 'AgriLocal AI' },
-  { src: '/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg', alt: 'HavenSpaces' },
-  { src: '/images/portfolio_showcase/lumiere/earrings.png', alt: 'Diamond Earrings' },
-  { src: '/images/portfolio_showcase/sunshine/neem-face-wash.jpg', alt: 'Neem Face Wash' },
+  { src: '/images/portfolio_showcase/hehe/card 2.jpg', alt: 'Mindtech Tech Service Solutions' },
+  { src: '/images/portfolio_showcase/agrilocal/2_agrilocal_interface_screens.jpg', alt: 'AgriLocal Diagnostics' },
+  { src: '/images/portfolio_showcase/hehe/card 1.jpg', alt: 'Furni Studio UI' },
+  { src: '/images/portfolio_showcase/hehe/card 4.png', alt: 'SkyGlide Travel Experience' },
 ];
 
 const EMAIL = 'ovais.0404@gmail.com';
@@ -45,12 +45,12 @@ function MarqueeRow({
         {repeated.map((img, i) => (
           <div
             key={i}
-            className="relative flex-shrink-0 w-[380px] h-[260px] rounded-2xl overflow-hidden border border-white/10 mx-3 bg-white/[0.04] pointer-events-none"
+            className="relative flex-shrink-0 w-[420px] h-[280px] rounded-2xl overflow-hidden border border-white/15 mx-3.5 bg-neutral-900 shadow-2xl pointer-events-none"
           >
             <img
               src={img.src}
               alt={img.alt}
-              className="w-full h-full object-cover opacity-90"
+              className="w-full h-full object-cover object-top opacity-95 transition-opacity"
             />
           </div>
         ))}

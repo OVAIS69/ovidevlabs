@@ -42,7 +42,7 @@ export const projectsData: Record<string, ProjectDetail> = {
     id: 'agrilocal',
     title: 'AgriLocal.ai',
     subtitle: 'AI-powered smart agriculture assistant with hands-free multilingual voice',
-    role: 'Founder & AI Engineer',
+    role: 'Lead Full-Stack & AI Developer',
     year: '2025 - 2026',
     tags: ['AI Agritech', 'Voice AI', 'Multilingual', 'Chatbot', 'Smart Farming'],
     description:

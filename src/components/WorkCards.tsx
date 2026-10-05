@@ -278,7 +278,7 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
                     </span>
                   </div>
                   <span className="font-archia text-[13px] font-[400] text-right text-white/55">
-                    Founder & AI Engineer
+                    Web Developer & AI Engineer
                   </span>
                 </div>
                 <p className="font-sans font-[450] text-[14.5px] leading-[1.5] text-white/65 mt-3">

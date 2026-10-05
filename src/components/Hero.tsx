@@ -345,7 +345,7 @@ export default function Hero() {
         <div className="hidden [@media(min-height:800px)]:md:block absolute bottom-32 right-12 lg:bottom-36 lg:right-14 z-20 max-w-[280px]">
           <Reveal durationMs={800} delayMs={700}>
             <p className="font-archia text-[13px] lg:text-[14px] leading-[1.55] text-black/55 text-right">
-              Founder at OviDevLabs. Architecting full-stack web platforms, AI integrations, and high-converting interfaces.
+              Creative Web Developer. Architecting responsive web platforms, AI integrations, and high-converting interfaces.
             </p>
           </Reveal>
         </div>
@@ -382,7 +382,7 @@ export default function Hero() {
           {/* Huge Main Headline */}
           <h1 className="w-full max-w-[1200px] font-sans font-[450] leading-[1.06] text-[clamp(1.5rem,min(4.4vw,6.5vh),4.25rem)] text-black tracking-[-0.01em] -mt-2 md:-mt-3">
             <Reveal durationMs={850} delayMs={250}>
-              <span className="block">Creative Full Stack Engineer</span>
+              <span className="block">Creative Web Developer</span>
             </Reveal>
             <Reveal durationMs={850} delayMs={350}>
               <span className="block">shipping AI & web products,</span>
