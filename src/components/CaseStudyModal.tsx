@@ -106,13 +106,16 @@ export const projectsData: Record<string, ProjectDetail> = {
   },
 };
 
+import { useProjects } from '../hooks/useProjects';
+
 interface CaseStudyModalProps {
   projectId: string | null;
   onClose: () => void;
 }
 
 export default function CaseStudyModal({ projectId, onClose }: CaseStudyModalProps) {
-  const project = projectId ? projectsData[projectId] : null;
+  const { projects } = useProjects();
+  const project = projectId ? projects[projectId] : null;
 
   useEffect(() => {
     if (project) {
