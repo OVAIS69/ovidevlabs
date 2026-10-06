@@ -159,7 +159,7 @@ export default function About() {
           </h2>
 
           <p className="font-archia font-[400] text-[16px] md:text-[17px] leading-[1.7] text-white/65 max-w-[760px] mt-6 md:mt-7">
-            I'm a <span className="text-white font-[500]">Creative Web Developer</span>. Over the past 5+ years, I've designed and engineered fast, responsive web applications, interactive user experiences, proptech platforms, and high-converting digital products across Next.js, React, TypeScript, and Python.
+            I'm a <span className="text-white font-[500]">Creative Web Developer</span>. Over the past 3 years, I've designed and engineered fast, responsive web applications, interactive user experiences, proptech platforms, and high-converting digital products across Next.js, React, TypeScript, and Python.
           </p>
 
           <p className="font-archia font-[400] text-[16px] md:text-[17px] leading-[1.7] text-white/65 max-w-[760px] mt-4">
@@ -174,8 +174,8 @@ export default function About() {
 
           {/* Desktop stats */}
           <div className="hidden lg:grid grid-cols-3 gap-6 mt-5 md:mt-6 w-full">
-            <StatItem value="5+" caption="Years Shipping Products" />
-            <StatItem value="15+" caption="Production Web & AI Apps" />
+            <StatItem value="3" caption="Years Hands-On Experience" />
+            <StatItem value="5+" caption="Production Web & AI Apps" />
             <StatItem value="100%" caption="Commitment to Quality & Speed" />
           </div>
 
@@ -195,8 +195,8 @@ export default function About() {
             </div>
 
             <div className="grid grid-cols-3 gap-5 md:gap-8 mt-10">
-              <StatItem value="5+" caption="Years Shipping Products" />
-              <StatItem value="15+" caption="Production Web & AI Apps" />
+              <StatItem value="3" caption="Years Hands-On Experience" />
+              <StatItem value="5+" caption="Production Web & AI Apps" />
               <StatItem value="100%" caption="Commitment to Quality & Speed" />
             </div>
           </div>
