@@ -30,16 +30,16 @@ const starConfigs = [
   },
 ];
 
-const companyIds = [1, 2, 3, 4, 5, 6, 7];
-const companyHeights: Record<number, number> = {
-  1: 34,
-  2: 26,
-  3: 32,
-  4: 40,
-  5: 40,
-  6: 30,
-  7: 30,
-};
+const projectBadges = [
+  { label: 'Lumière', category: 'Fine Jewellery 3D' },
+  { label: 'AgriLocal.ai', category: 'Multilingual Voice AI' },
+  { label: 'HavenSpaces', category: 'Proptech & Map Search' },
+  { label: 'Sunshine Herbal', category: 'Ayurvedic D2C' },
+  { label: 'Next.js 15', category: 'App Router' },
+  { label: 'React & TypeScript', category: 'UI Engineering' },
+  { label: 'Tailwind CSS', category: 'Fluid Systems' },
+  { label: 'Python & LLMs', category: 'AI Intelligence' },
+];
 
 async function copyToClipboard(text: string): Promise<boolean> {
   if (typeof navigator !== 'undefined' && navigator.clipboard?.writeText) {
@@ -65,30 +65,22 @@ async function copyToClipboard(text: string): Promise<boolean> {
 }
 
 function CompanyMarquee() {
-  const repeatedCompanies = [...companyIds, ...companyIds, ...companyIds, ...companyIds];
+  const repeatedBadges = [...projectBadges, ...projectBadges, ...projectBadges, ...projectBadges];
 
   return (
-    <div className="relative w-full overflow-hidden pointer-events-none select-none">
+    <div className="relative w-full overflow-hidden pointer-events-none select-none py-2">
       <div className="flex items-center animate-marquee-left" style={{ width: 'max-content' }}>
-        {repeatedCompanies.map((id, index) => (
-          <span key={`${id}-${index}`} className="flex items-center flex-shrink-0">
-            <img
-              src={`/img/companies/${id}.svg`}
-              alt=""
-              className="flex-shrink-0 w-auto"
-              style={{
-                filter: 'brightness(0)',
-                opacity: 0.45,
-                height: `${0.9 * companyHeights[id]}px`,
-              }}
-            />
-            <img
-              src="/img/companies/separator.svg"
-              alt=""
-              aria-hidden="true"
-              className="w-[45px] h-px mx-8 flex-shrink-0"
-              style={{ filter: 'brightness(0)', opacity: 0.45 }}
-            />
+        {repeatedBadges.map((item, index) => (
+          <span key={`${item.label}-${index}`} className="flex items-center flex-shrink-0">
+            <span className="flex items-baseline gap-2 font-archia">
+              <span className="font-sans font-[600] text-[15px] sm:text-[16px] text-black/75 tracking-tight">
+                {item.label}
+              </span>
+              <span className="text-[10.5px] uppercase tracking-[0.14em] text-black/40 font-medium">
+                {item.category}
+              </span>
+            </span>
+            <span className="inline-block w-[32px] h-px bg-black/25 mx-6 flex-shrink-0" aria-hidden="true" />
           </span>
         ))}
       </div>
