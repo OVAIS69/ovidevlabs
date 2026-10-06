@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Badge from './Badge';
 import Reveal from './Reveal';
 
-const trailImages = Array.from({ length: 12 }, (_, i) => `/img/ImageTrail/${i + 1}.jpg`);
+const trailImages = Array.from({ length: 12 }, (_, i) => `/img/ImageTrail/${i + 1}.webp`);
 
 interface TrailItem {
   id: number;

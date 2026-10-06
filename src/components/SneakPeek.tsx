@@ -1,29 +1,29 @@
 const row1Images = [
   { src: '/images/portfolio_showcase/hehe/card 1.jpg', alt: 'Furni - Modern Interior Design Studio' },
-  { src: '/images/portfolio_showcase/hehe/card 2.jpg', alt: 'Mindtech - IT & Cloud Solutions' },
-  { src: '/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg', alt: 'HavenSpaces Proptech' },
-  { src: '/images/portfolio_showcase/hehe/card 3.png', alt: 'Simply - Clean Web Design Studio' },
+  { src: '/images/portfolio_showcase/hehe/card 2.webp', alt: 'Mindtech - IT & Cloud Solutions' },
+  { src: '/images/portfolio_showcase/1_havenspaces_hero_case_study.webp', alt: 'HavenSpaces Proptech' },
+  { src: '/images/portfolio_showcase/hehe/card 3.webp', alt: 'Simply - Clean Web Design Studio' },
 ];
 
 const row2Images = [
-  { src: '/images/portfolio_showcase/hehe/card 4.png', alt: 'SkyGlide - Visit Tokyo Travel Platform' },
-  { src: '/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.jpg', alt: 'AgriLocal.ai Smart Farming' },
-  { src: '/images/portfolio_showcase/hehe/card 5.png', alt: 'Borcelle - Gourmet Burger App' },
-  { src: '/images/portfolio_showcase/lumiere/hero.png', alt: 'Lumière High Jewellery' },
+  { src: '/images/portfolio_showcase/hehe/card 4.webp', alt: 'SkyGlide - Visit Tokyo Travel Platform' },
+  { src: '/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.webp', alt: 'AgriLocal.ai Smart Farming' },
+  { src: '/images/portfolio_showcase/hehe/card 5.webp', alt: 'Borcelle - Gourmet Burger App' },
+  { src: '/images/portfolio_showcase/lumiere/hero.webp', alt: 'Lumière High Jewellery' },
 ];
 
 const row3Images = [
-  { src: '/images/portfolio_showcase/hehe/card 6.png', alt: 'Taor - Dining & Cuisine Booking Platform' },
-  { src: '/images/portfolio_showcase/sunshine/full-collection.jpg', alt: 'Sunshine Botanical Skincare' },
-  { src: '/images/portfolio_showcase/hehe/card 7.png', alt: 'Space - Astronomy & Telescope Platform' },
-  { src: '/images/portfolio_showcase/2_havenspaces_interface_screens.jpg', alt: 'HavenSpaces UI' },
+  { src: '/images/portfolio_showcase/hehe/card 6.webp', alt: 'Taor - Dining & Cuisine Booking Platform' },
+  { src: '/images/portfolio_showcase/sunshine/full-collection.webp', alt: 'Sunshine Botanical Skincare' },
+  { src: '/images/portfolio_showcase/hehe/card 7.webp', alt: 'Space - Astronomy & Telescope Platform' },
+  { src: '/images/portfolio_showcase/2_havenspaces_interface_screens.webp', alt: 'HavenSpaces UI' },
 ];
 
 const row4Images = [
-  { src: '/images/portfolio_showcase/hehe/card 2.jpg', alt: 'Mindtech Tech Service Solutions' },
-  { src: '/images/portfolio_showcase/agrilocal/2_agrilocal_interface_screens.jpg', alt: 'AgriLocal Diagnostics' },
+  { src: '/images/portfolio_showcase/hehe/card 2.webp', alt: 'Mindtech Tech Service Solutions' },
+  { src: '/images/portfolio_showcase/agrilocal/2_agrilocal_interface_screens.webp', alt: 'AgriLocal Diagnostics' },
   { src: '/images/portfolio_showcase/hehe/card 1.jpg', alt: 'Furni Studio UI' },
-  { src: '/images/portfolio_showcase/hehe/card 4.png', alt: 'SkyGlide Travel Experience' },
+  { src: '/images/portfolio_showcase/hehe/card 4.webp', alt: 'SkyGlide Travel Experience' },
 ];
 
 const EMAIL = 'ovais.0404@gmail.com';

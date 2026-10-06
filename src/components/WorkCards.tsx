@@ -197,7 +197,7 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
 
               <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
                 <img
-                  src="/images/portfolio_showcase/lumiere/hero.png"
+                  src="/images/portfolio_showcase/lumiere/hero.webp"
                   alt="Lumière Jewellery"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
@@ -253,7 +253,7 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
 
               <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
                 <img
-                  src="/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.jpg"
+                  src="/images/portfolio_showcase/agrilocal/1_agrilocal_hero_case_study.webp"
                   alt="AgriLocal.ai"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
@@ -311,7 +311,7 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
               {/* Cover preview with tag pills */}
               <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
                 <img
-                  src="/images/portfolio_showcase/1_havenspaces_hero_case_study.jpg"
+                  src="/images/portfolio_showcase/1_havenspaces_hero_case_study.webp"
                   alt="HavenSpaces"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
@@ -368,7 +368,7 @@ export default function WorkCards({ onSelectProject }: WorkCardsProps) {
 
               <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
                 <img
-                  src="/images/portfolio_showcase/sunshine/full-collection.jpg"
+                  src="/images/portfolio_showcase/sunshine/full-collection.webp"
                   alt="Sunshine Herbal"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />

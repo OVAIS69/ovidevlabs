@@ -6,7 +6,7 @@ const EMAIL = 'ovais.0404@gmail.com';
 
 const starConfigs = [
   {
-    src: '/img/hero/star-1.png',
+    src: '/img/hero/star-1.webp',
     size: 300,
     baseLeftPct: 23,
     baseTopPct: 50,
@@ -18,7 +18,7 @@ const starConfigs = [
     floatPhase: 0,
   },
   {
-    src: '/img/hero/star-2.png',
+    src: '/img/hero/star-2.webp',
     size: 230,
     baseLeftPct: 77,
     baseTopPct: 40,
@@ -395,7 +395,7 @@ export default function Hero() {
           <Reveal durationMs={700} delayMs={60}>
             <span className="relative inline-block w-[54px] h-[78px] sm:w-[62px] sm:h-[90px] md:w-[68px] md:h-[100px] [@media(min-height:800px)]:lg:w-[76px] [@media(min-height:800px)]:lg:h-[116px] rounded-full overflow-hidden border-[2px] md:border-[2.4px] border-[var(--color-border)] shadow-md shadow-pink-900/5">
               <img
-                src="/img/pfp.png"
+                src="/img/pfp.webp"
                 alt="Ovais Shaikh"
                 className="w-full h-full object-cover"
               />
