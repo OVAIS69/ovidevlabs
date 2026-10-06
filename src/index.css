@@ -165,3 +165,67 @@ body {
 .marquee-row:hover .animate-marquee-right {
   animation-play-state: paused;
 }
+
+@keyframes rainbow-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes light-sweep {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+  }
+  50%, 100% {
+    transform: translateX(250%) skewX(-25deg);
+  }
+}
+
+@keyframes sparkle-spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.25);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.55;
+    transform: scale(0.98);
+    filter: blur(14px);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.05);
+    filter: blur(20px);
+  }
+}
+
+.animate-rainbow {
+  background-size: 300% 300%;
+  animation: rainbow-flow 4s ease infinite;
+}
+
+.animate-sweep {
+  animation: light-sweep 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-sparkle-spin {
+  animation: sparkle-spin 6s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+

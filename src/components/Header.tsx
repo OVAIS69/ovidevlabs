@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import CrazyResumeButton from './CrazyResumeButton';
 
 const navLinks = [
   { label: 'Selected Work', href: '#work-cards' },
@@ -130,7 +131,7 @@ export default function Header({ variant: initialVariant, onNavigateHome }: Head
       <nav
         className={`pointer-events-auto relative z-10 mx-auto flex items-center justify-between transition-all duration-500 ease-out ${
           scrolled
-            ? `max-w-[640px] border backdrop-blur-xl ${
+            ? `max-w-[720px] border backdrop-blur-xl ${
                 isDark
                   ? 'bg-[#0e0e12]/80 border-white/20 shadow-[0_12px_36px_rgba(0,0,0,0.6)]'
                   : 'bg-white/85 border-[var(--color-border)] shadow-[0_12px_36px_rgba(0,0,0,0.08)]'
@@ -182,30 +183,33 @@ export default function Header({ variant: initialVariant, onNavigateHome }: Head
           ))}
         </ul>
 
-        {/* CTA Button Desktop */}
-        <a
-          href={`mailto:${EMAIL}`}
-          className={`hidden md:flex items-center gap-1.5 ${ctaBtn} font-sans font-[500] transition-all duration-300 rounded-full ${
-            scrolled ? 'text-[13px] px-3.5 py-1.5' : 'text-[15px] px-4 py-2.5'
-          }`}
-        >
-          Get in touch
-          <svg
-            width={scrolled ? 13 : 15}
-            height={scrolled ? 13 : 15}
-            viewBox="0 0 16 16"
-            fill="none"
-            className="transition-transform group-hover:translate-x-0.5"
+        {/* Desktop Actions */}
+        <div className="hidden md:flex items-center gap-2.5">
+          <CrazyResumeButton variant="header" />
+          <a
+            href={`mailto:${EMAIL}`}
+            className={`flex items-center gap-1.5 ${ctaBtn} font-sans font-[500] transition-all duration-300 rounded-full ${
+              scrolled ? 'text-[13px] px-3.5 py-1.5' : 'text-[15px] px-4 py-2.5'
+            }`}
           >
-            <path
-              d="M3 8h10M9 4l4 4-4 4"
-              stroke={arrowStroke}
-              strokeWidth="1.6"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </a>
+            Get in touch
+            <svg
+              width={scrolled ? 13 : 15}
+              height={scrolled ? 13 : 15}
+              viewBox="0 0 16 16"
+              fill="none"
+              className="transition-transform group-hover:translate-x-0.5"
+            >
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                stroke={arrowStroke}
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
 
         {/* Mobile menu hamburger toggle */}
         <button
@@ -272,22 +276,26 @@ export default function Header({ variant: initialVariant, onNavigateHome }: Head
 
           <div className="h-px bg-current/10 my-2" />
 
-          <a
-            href={`mailto:${EMAIL}`}
-            onClick={() => setMobileMenuOpen(false)}
-            className={`inline-flex items-center justify-center gap-1.5 ${ctaBtn} font-sans font-[500] text-[15px] px-4 py-3 rounded-full`}
-          >
-            Get in touch
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path
-                d="M3 8h10M9 4l4 4-4 4"
-                stroke={arrowStroke}
-                strokeWidth="1.6"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a>
+          <div className="flex flex-col gap-2.5">
+            <CrazyResumeButton variant="about" className="w-full justify-center" />
+
+            <a
+              href={`mailto:${EMAIL}`}
+              onClick={() => setMobileMenuOpen(false)}
+              className={`inline-flex items-center justify-center gap-1.5 ${ctaBtn} font-sans font-[500] text-[15px] px-4 py-3 rounded-full`}
+            >
+              Get in touch
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8h10M9 4l4 4-4 4"
+                  stroke={arrowStroke}
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
 
           <button
             type="button"

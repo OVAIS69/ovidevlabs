@@ -2,6 +2,7 @@ import { useState, useRef, useEffect, useCallback } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Badge from './Badge';
 import Reveal from './Reveal';
+import CrazyResumeButton from './CrazyResumeButton';
 
 const trailImages = Array.from({ length: 12 }, (_, i) => `/img/ImageTrail/${i + 1}.jpg`);
 
@@ -179,6 +180,10 @@ export default function About() {
             <StatItem value="100%" caption="Commitment to Quality & Speed" />
           </div>
 
+          <div className="hidden lg:flex items-center mt-8">
+            <CrazyResumeButton variant="about" />
+          </div>
+
           {/* Mobile image & stats */}
           <div className="lg:hidden mt-8">
             <div className="relative aspect-[4/5] w-full -mx-6 md:-mx-10 overflow-hidden border-y border-white/10">
@@ -198,6 +203,10 @@ export default function About() {
               <StatItem value="3" caption="Years Hands-On Experience" />
               <StatItem value="5+" caption="Production Web & AI Apps" />
               <StatItem value="100%" caption="Commitment to Quality & Speed" />
+            </div>
+
+            <div className="mt-8 flex justify-center">
+              <CrazyResumeButton variant="about" />
             </div>
           </div>
         </div>
