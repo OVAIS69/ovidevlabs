@@ -214,13 +214,13 @@ function ContactActions() {
 
   return (
     <div className="flex flex-col items-center gap-3">
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-3.5">
         <a
           href={`mailto:${EMAIL}`}
-          className="inline-flex items-center justify-center gap-1.5 bg-black text-white font-sans font-[500] text-[16px] sm:text-[18px] px-7 sm:px-9 py-[14px] sm:py-[18px] rounded-full whitespace-nowrap hover:bg-neutral-800 transition-colors shadow-lg shadow-black/10"
+          className="inline-flex items-center justify-center gap-2 h-[52px] sm:h-[58px] px-7 sm:px-9 rounded-full bg-black text-white font-sans font-[500] text-[15px] sm:text-[17px] whitespace-nowrap hover:bg-neutral-800 active:scale-[0.98] transition-all shadow-md shadow-black/10"
         >
           Get in touch
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
             <path d="M9 6l6 6-6 6" stroke="#F2F6FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </a>

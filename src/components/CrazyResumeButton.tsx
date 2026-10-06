@@ -16,15 +16,10 @@ export default function CrazyResumeButton({ variant = 'hero', className = '' }: 
         target="_blank"
         rel="noopener noreferrer"
         aria-label="View Ovais Shaikh's Resume (PDF)"
-        className={`group relative inline-flex items-center gap-1.5 rounded-full p-[1.5px] transition-all duration-300 hover:scale-105 active:scale-95 ${className}`}
+        className={`group relative inline-flex items-center gap-1.5 rounded-full p-[1.5px] transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_2px_12px_rgba(244,114,182,0.25)] ${className}`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Animated rainbow glow layer */}
-        <span
-          className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 via-rose-400 to-amber-300 animate-rainbow opacity-75 blur-[5px] group-hover:opacity-100 group-hover:blur-[8px] transition-all duration-300"
-          aria-hidden="true"
-        />
         {/* Animated gradient border */}
         <span
           className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 via-rose-400 to-amber-300 animate-rainbow"
@@ -32,12 +27,10 @@ export default function CrazyResumeButton({ variant = 'hero', className = '' }: 
         />
         {/* Inner pill */}
         <span className="relative z-10 flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-1.5 rounded-full bg-[#0a0a0d] text-white font-sans font-[500] text-[13px] tracking-tight overflow-hidden">
-          {/* Shimmer light sweep */}
           <span
             className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/25 to-transparent animate-sweep pointer-events-none"
             aria-hidden="true"
           />
-          {/* Rotating Sparkle */}
           <svg
             width="13"
             height="13"
@@ -66,12 +59,12 @@ export default function CrazyResumeButton({ variant = 'hero', className = '' }: 
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Download or view Ovais Shaikh's Resume (PDF)"
-        className={`group relative inline-flex items-center gap-2 rounded-full p-[2px] transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_10px_35px_-5px_rgba(244,114,182,0.45)] ${className}`}
+        className={`group relative inline-flex items-center justify-center rounded-full p-[1.5px] transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_4px_24px_rgba(244,114,182,0.3)] hover:shadow-[0_6px_32px_rgba(244,114,182,0.5)] ${className}`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <span
-          className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-rose-400 via-purple-500 to-amber-300 animate-rainbow opacity-80 blur-md group-hover:opacity-100 group-hover:blur-lg transition-all"
+          className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-rose-400 via-purple-500 to-amber-300 animate-rainbow opacity-0 group-hover:opacity-75 blur-md transition-opacity duration-300 pointer-events-none"
           aria-hidden="true"
         />
         <span
@@ -118,20 +111,20 @@ export default function CrazyResumeButton({ variant = 'hero', className = '' }: 
     );
   }
 
-  // Default 'hero' crazy interactive button
+  // Default 'hero' crazy interactive button - pixel-perfect matched height and clean glow
   return (
     <a
       href={resumeUrl}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="View or download Ovais Shaikh's resume (PDF)"
-      className={`group relative inline-flex items-center justify-center rounded-full p-[2px] transition-all duration-300 hover:scale-[1.04] active:scale-[0.98] ${className}`}
+      className={`group relative inline-flex items-center justify-center h-[52px] sm:h-[58px] rounded-full p-[1.5px] transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-[0_4px_20px_-2px_rgba(244,114,182,0.35)] hover:shadow-[0_8px_30px_rgba(244,114,182,0.55)] ${className}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Outer pulsating neon glow halo */}
+      {/* Soft hover glow halo (strictly aligned behind button, no messy smudge) */}
       <span
-        className="absolute -inset-1 rounded-full bg-gradient-to-r from-pink-500 via-rose-400 via-purple-500 to-amber-300 animate-rainbow opacity-75 blur-xl group-hover:opacity-100 group-hover:blur-2xl transition-all duration-500"
+        className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-rose-400 via-purple-500 to-amber-300 animate-rainbow opacity-0 group-hover:opacity-75 blur-md transition-opacity duration-300 pointer-events-none"
         aria-hidden="true"
       />
 
@@ -141,8 +134,8 @@ export default function CrazyResumeButton({ variant = 'hero', className = '' }: 
         aria-hidden="true"
       />
 
-      {/* Inner button surface */}
-      <span className="relative z-10 flex items-center gap-2 sm:gap-2.5 px-6 sm:px-8 py-[13px] sm:py-[17px] rounded-full bg-[#0a0a0f] text-white font-sans font-[500] text-[15px] sm:text-[17px] tracking-tight shadow-2xl overflow-hidden">
+      {/* Inner button surface matching exact height */}
+      <span className="relative z-10 h-full flex items-center gap-2 sm:gap-2.5 px-6 sm:px-7 rounded-full bg-[#0a0a0f] text-white font-sans font-[500] text-[15px] sm:text-[17px] tracking-tight overflow-hidden">
         {/* Shimmer reflection sweep animation */}
         <span
           className="absolute inset-0 w-2/3 h-full bg-gradient-to-r from-transparent via-white/20 to-transparent animate-sweep pointer-events-none"
@@ -152,8 +145,8 @@ export default function CrazyResumeButton({ variant = 'hero', className = '' }: 
         {/* Dynamic Sparkle star */}
         <span className="relative flex items-center justify-center text-pink-400">
           <svg
-            width="18"
-            height="18"
+            width="17"
+            height="17"
             viewBox="0 0 24 24"
             fill="currentColor"
             className={`transition-transform duration-500 ${isHovered ? 'rotate-180 scale-125' : 'animate-sparkle-spin'}`}
@@ -164,20 +157,19 @@ export default function CrazyResumeButton({ variant = 'hero', className = '' }: 
         </span>
 
         {/* Text */}
-        <span className="bg-gradient-to-r from-white via-rose-100 to-pink-200 bg-clip-text text-transparent font-sans font-[550]">
+        <span className="bg-gradient-to-r from-white via-rose-100 to-pink-200 bg-clip-text text-transparent font-sans font-[550] whitespace-nowrap">
           Resume / CV
         </span>
 
         {/* Interactive Badge */}
-        <span className="inline-flex items-center gap-1 font-archia text-[11px] sm:text-[11.5px] tracking-wider uppercase bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded-full border border-pink-400/30">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping inline-block" />
+        <span className="inline-flex items-center gap-1 font-archia text-[10.5px] sm:text-[11px] tracking-wider uppercase bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded-full border border-pink-400/30">
           PDF
         </span>
 
-        {/* Arrow / External icon */}
+        {/* Arrow icon */}
         <svg
-          width="18"
-          height="18"
+          width="16"
+          height="16"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
