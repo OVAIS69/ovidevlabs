@@ -141,16 +141,15 @@ export default function CaseStudyModal({ projectId, onClose }: CaseStudyModalPro
       {project && (
         <motion.div
           key="modal-backdrop"
+          id="case-study-modal"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
           onClick={onClose}
           data-lenis-prevent="true"
-          data-lenis-prevent-touch="true"
-          data-lenis-prevent-wheel="true"
-          className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-xl flex justify-center items-start p-4 sm:p-6 md:p-10"
-          style={{ overscrollBehavior: 'contain', WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
+          className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-xl flex justify-center items-start p-4 sm:p-6 md:p-10 lenis-prevent"
+          style={{ overscrollBehavior: 'contain', WebkitOverflowScrolling: 'touch' }}
         >
           <motion.div
             key="modal-content"
@@ -159,11 +158,7 @@ export default function CaseStudyModal({ projectId, onClose }: CaseStudyModalPro
             exit={{ opacity: 0, y: 30, scale: 0.98 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             onClick={(e) => e.stopPropagation()}
-            data-lenis-prevent="true"
-            data-lenis-prevent-touch="true"
-            data-lenis-prevent-wheel="true"
-            className="relative w-full max-w-5xl bg-[#0e0e12] border border-white/15 rounded-3xl overflow-hidden text-white shadow-2xl my-4 sm:my-8"
-            style={{ overscrollBehavior: 'contain', touchAction: 'pan-y' }}
+            className="relative w-full max-w-5xl bg-[#0e0e12] border border-white/15 rounded-3xl overflow-hidden text-white shadow-2xl my-4 sm:my-8 pointer-events-auto"
           >
             {/* Close button */}
             <button
