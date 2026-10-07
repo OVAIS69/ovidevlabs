@@ -122,9 +122,6 @@ export default function CaseStudyModal({ projectId, onClose }: CaseStudyModalPro
       const prev = document.body.style.overflow;
       document.body.style.overflow = 'hidden';
 
-      const lenis = (window as any).__lenis;
-      if (lenis?.stop) lenis.stop();
-
       const handleKeyDown = (e: KeyboardEvent) => {
         if (e.key === 'Escape') {
           onClose();
@@ -134,7 +131,6 @@ export default function CaseStudyModal({ projectId, onClose }: CaseStudyModalPro
 
       return () => {
         document.body.style.overflow = prev;
-        if (lenis?.start) lenis.start();
         window.removeEventListener('keydown', handleKeyDown);
       };
     }
