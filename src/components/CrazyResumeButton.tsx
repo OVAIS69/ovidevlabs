@@ -7,7 +7,7 @@ interface CrazyResumeButtonProps {
 
 export default function CrazyResumeButton({ variant = 'hero', className = '' }: CrazyResumeButtonProps) {
   const [isHovered, setIsHovered] = useState(false);
-  const resumeUrl = '/Ovais_Shaikh_Resume.pdf';
+  const resumeUrl = '/Ovais_Shaikh_Software_Developer_Resume.pdf?v=20261008';
 
   if (variant === 'header') {
     return (
